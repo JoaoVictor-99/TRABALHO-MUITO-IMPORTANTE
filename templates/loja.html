@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Loja de Jogos - GamesHub Edu{% endblock %}
+
+{% block content %}
+<h1>Loja de jogos</h1>
+<p>Jogos completos de verdade, cada um ligado a uma materia. Alugue e receba o acesso na hora.</p>
+
+<div class="grade-jogos">
+    {% for jogo in jogos %}
+        <a href="{{ url_for('loja_detalhe', jogo_id=jogo.id) }}" class="card-jogo">
+            <img src="{{ url_for('static', filename='img/' ~ jogo.imagem) }}" alt="Capa de {{ jogo.nome }}" class="capa-jogo">
+            <h2>{{ jogo.nome }}</h2>
+            <p>{{ jogo.materia }}</p>
+            <span class="selo selo-classificacao">{{ jogo.classificacao }}</span>
+            <span class="selo selo-plataforma">{{ jogo.plataforma }}</span>
+            <p>
+                {% if jogo.disponivel %}
+                    <span class="selo selo-disponivel">Disponivel</span>
+                {% else %}
+                    <span class="selo selo-alugado">Alugado</span>
+                {% endif %}
+            </p>
+        </a>
+    {% endfor %}
+</div>
+{% endblock %}

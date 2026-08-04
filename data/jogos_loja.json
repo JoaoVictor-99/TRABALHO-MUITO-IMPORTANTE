@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "nome": "Astroneer",
+    "materia": "Geografia",
+    "classificacao": "Livre",
+    "plataforma": "Steam",
+    "imagem": "astroneer.jpg",
+    "sinopse": "Jogo de exploracao espacial em que o jogador visita planetas diferentes, estuda o relevo de cada um e coleta recursos para construir bases. Ajuda a entender conceitos de geografia, como relevo, recursos naturais e formacao do terreno, dentro de um cenario de ficcao cientifica."
+  },
+  {
+    "id": 2,
+    "nome": "Plague Inc: Evolved",
+    "materia": "Ciencias",
+    "classificacao": "12 anos",
+    "plataforma": "Steam",
+    "imagem": "plague-inc.jpg",
+    "sinopse": "Simulador de estrategia em que o jogador cria e evolui uma doenca, acompanhando como ela se espalha pelo mundo. Ensina, na pratica, conceitos de biologia e epidemiologia, como transmissao, sintomas e medidas de saude publica."
+  },
+  {
+    "id": 3,
+    "nome": "Microsoft Flight Simulator 2024",
+    "materia": "Geografia",
+    "classificacao": "Livre",
+    "plataforma": "Microsoft Store",
+    "imagem": "flight-simulator.jpg",
+    "sinopse": "Simulador de voo realista que recria o planeta em escala real. O jogador pilota diferentes aeronaves e sobrevoa cidades, montanhas e rios, o que ajuda a visualizar relevo, clima e geografia de varias regioes do mundo."
+  },
+  {
+    "id": 4,
+    "nome": "Shenzhen I/O",
+    "materia": "TI",
+    "classificacao": "Livre",
+    "plataforma": "Steam",
+    "imagem": "shenzhen-io.jpg",
+    "sinopse": "Jogo de quebra-cabecas em que o jogador programa pequenos circuitos eletronicos usando uma linguagem parecida com assembly. Ensina logica de programacao e nocoes basicas de eletronica de um jeito tecnico e desafiador."
+  },
+  {
+    "id": 5,
+    "nome": "Assassin's Creed Valhalla",
+    "materia": "Historia",
+    "classificacao": "18 anos",
+    "plataforma": "Microsoft Store",
+    "imagem": "valhalla.jpg",
+    "sinopse": "Jogo de acao e aventura ambientado na era viking, em que o jogador explora vilarejos, reinos e conflitos daquele periodo historico, conhecendo aspectos da cultura e dos costumes vikings."
+  },
+  {
+    "id": 6,
+    "nome": "Assassin's Creed Origins",
+    "materia": "Historia",
+    "classificacao": "18 anos",
+    "plataforma": "Steam",
+    "imagem": "origins.jpg",
+    "sinopse": "Jogo de acao e aventura ambientado no Egito Antigo, com piramides, templos e figuras historicas da epoca, permitindo explorar cidades e monumentos que remetem a historia egipcia."
+  },
+  {
+    "id": 7,
+    "nome": "Influent",
+    "materia": "Portugues",
+    "classificacao": "Livre",
+    "plataforma": "Steam",
+    "imagem": "influent.jpg",
+    "sinopse": "Jogo de aprendizado de idiomas em que o jogador interage com objetos de uma casa em 3D para aprender o nome de cada item em diferentes linguas. Ajuda a expandir vocabulario e fixar palavras novas de forma visual."
+  },
+  {
+    "id": 8,
+    "nome": "Kerbal Space Program",
+    "materia": "Engenharia",
+    "classificacao": "Livre",
+    "plataforma": "Steam",
+    "imagem": "kerbal.jpg",
+    "sinopse": "Simulador espacial em que o jogador projeta e constroi foguetes, testando resistencia, combustivel e fisica de voo. Ensina conceitos de engenharia aeroespacial de forma pratica, aprendendo por tentativa e erro."
+  }
+]

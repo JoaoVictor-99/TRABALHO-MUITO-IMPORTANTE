@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% block title %}Jogar {{ jogo.nome }} - GamesHub Edu{% endblock %}
+
+{% block content %}
+<a href="{{ url_for('perfil') }}">Voltar ao perfil</a>
+
+<h1>{{ jogo.nome }}</h1>
+<p>{{ jogo.categoria }} - {{ jogo.faixa_etaria }}</p>
+
+<div id="area-jogo">
+    <p id="contador"></p>
+    <h2 id="pergunta"></h2>
+    <div id="opcoes"></div>
+    <p id="feedback"></p>
+    <button id="botao-proxima" class="botao" style="display: none;">Proxima pergunta</button>
+</div>
+
+<div id="area-resultado" style="display: none;">
+    <h2>Fim de jogo</h2>
+    <p id="resultado-texto"></p>
+    <button id="botao-jogar-de-novo" class="botao">Jogar de novo</button>
+    <a href="{{ url_for('perfil') }}" class="botao botao-secundario">Voltar ao perfil</a>
+</div>
+
+<script>
+const perguntas = {{ perguntas | tojson }};
+let indiceAtual = 0;
+let acertos = 0;
+
+const elementoContador = document.getElementById("contador");
+const elementoPergunta = document.getElementById("pergunta");
+const elementoOpcoes = document.getElementById("opcoes");
+const elementoFeedback = document.getElementById("feedback");
+const botaoProxima = document.getElementById("botao-proxima");
+const areaJogo = document.getElementById("area-jogo");
+const areaResultado = document.getElementById("area-resultado");
+const resultadoTexto = document.getElementById("resultado-texto");
+const botaoJogarDeNovo = document.getElementById("botao-jogar-de-novo");
+
+function mostrarPergunta() {
+    const pergunta = perguntas[indiceAtual];
+    elementoContador.textContent = "Pergunta " + (indiceAtual + 1) + " de " + perguntas.length;
+    elementoPergunta.textContent = pergunta.pergunta;
+    elementoFeedback.textContent = "";
+    botaoProxima.style.display = "none";
+    elementoOpcoes.innerHTML = "";
+
+    pergunta.opcoes.forEach(function (opcao, indice) {
+        const botao = document.createElement("button");
+        botao.textContent = opcao;
+        botao.className = "botao opcao-jogo";
+        botao.onclick = function () {
+            responder(indice);
+        };
+        elementoOpcoes.appendChild(botao);
+    });
+}
+
+function responder(indiceEscolhido) {
+    const pergunta = perguntas[indiceAtual];
+    const botoes = elementoOpcoes.querySelectorAll("button");
+    botoes.forEach(function (botao) {
+        botao.disabled = true;
+    });
+
+    if (indiceEscolhido === pergunta.resposta_correta) {
+        acertos = acertos + 1;
+        elementoFeedback.textContent = "Certo!";
+    } else {
+        elementoFeedback.textContent = "Errado. A resposta certa era: " + pergunta.opcoes[pergunta.resposta_correta];
+    }
+
+    botaoProxima.style.display = "inline-block";
+}
+
+botaoProxima.onclick = function () {
+    indiceAtual = indiceAtual + 1;
+    if (indiceAtual < perguntas.length) {
+        mostrarPergunta();
+    } else {
+        areaJogo.style.display = "none";
+        areaResultado.style.display = "block";
+        resultadoTexto.textContent = "Voce acertou " + acertos + " de " + perguntas.length + " perguntas.";
+    }
+};
+
+botaoJogarDeNovo.onclick = function () {
+    indiceAtual = 0;
+    acertos = 0;
+    areaResultado.style.display = "none";
+    areaJogo.style.display = "block";
+    mostrarPergunta();
+};
+
+if (perguntas.length > 0) {
+    mostrarPergunta();
+} else {
+    elementoPergunta.textContent = "Esse jogo ainda nao tem perguntas cadastradas.";
+}
+</script>
+{% endblock %}

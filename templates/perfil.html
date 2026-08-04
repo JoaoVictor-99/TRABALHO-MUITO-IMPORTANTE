@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}Meu perfil - GamesHub Edu{% endblock %}
+
+{% block content %}
+<h1>{{ usuario.nome }}</h1>
+<p>Conta criada em {{ usuario.data_cadastro }}</p>
+
+<h2>Editar nome</h2>
+<form method="post" action="{{ url_for('perfil') }}" class="formulario">
+    <div class="campo">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" value="{{ usuario.nome }}" required>
+    </div>
+    <button type="submit" class="botao">Salvar</button>
+</form>
+
+<h2>Meus jogos alugados na loja</h2>
+
+{% if meus_alugueis %}
+    <ul class="lista-alugueis">
+        {% for aluguel in meus_alugueis %}
+            <li class="item-aluguel">
+                <div>
+                    <strong>{{ aluguel.jogo.nome }}</strong>
+                    <p>{{ aluguel.jogo.plataforma }} - devolucao ate {{ aluguel.data_devolucao }}</p>
+
+                    {% if aluguel.credenciais.tipo == "conta" %}
+                        <p>Email: {{ aluguel.credenciais.email }}</p>
+                        <p>Senha: {{ aluguel.credenciais.senha }}</p>
+                    {% else %}
+                        <p>Chave de ativacao: {{ aluguel.credenciais.chave }}</p>
+                    {% endif %}
+                </div>
+                <form method="post" action="{{ url_for('loja_devolver', aluguel_id=aluguel.id) }}">
+                    <button type="submit" class="botao botao-secundario">Devolver</button>
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>Voce ainda nao alugou nenhum jogo na loja.</p>
+    <a href="{{ url_for('loja') }}" class="botao">Ver loja de jogos</a>
+{% endif %}
+{% endblock %}

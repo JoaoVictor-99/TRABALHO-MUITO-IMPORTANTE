@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}{{ jogo.nome }} - Loja - GamesHub Edu{% endblock %}
+
+{% block content %}
+<a href="{{ url_for('loja') }}">Voltar a loja</a>
+
+<div class="detalhe-loja">
+    <img src="{{ url_for('static', filename='img/' ~ jogo.imagem) }}" alt="Capa de {{ jogo.nome }}" class="capa-jogo-grande">
+
+    <div>
+        <h1>{{ jogo.nome }}</h1>
+        <p>{{ jogo.materia }}</p>
+        <span class="selo selo-classificacao">Classificacao: {{ jogo.classificacao }}</span>
+        <span class="selo selo-plataforma">{{ jogo.plataforma }}</span>
+
+        <h2>Sobre o jogo</h2>
+        <p>{{ jogo.sinopse }}</p>
+
+        {% if meu_aluguel %}
+            <div class="caixa-credenciais">
+                <h2>Seu acesso</h2>
+                {% if meu_aluguel.credenciais.tipo == "conta" %}
+                    <p>Plataforma: {{ jogo.plataforma }}</p>
+                    <p>Email: {{ meu_aluguel.credenciais.email }}</p>
+                    <p>Senha: {{ meu_aluguel.credenciais.senha }}</p>
+                {% else %}
+                    <p>Plataforma: {{ jogo.plataforma }}</p>
+                    <p>Chave de ativacao: {{ meu_aluguel.credenciais.chave }}</p>
+                {% endif %}
+                <p>Devolucao ate {{ meu_aluguel.data_devolucao }}</p>
+            </div>
+            <form method="post" action="{{ url_for('loja_devolver', aluguel_id=meu_aluguel.id) }}">
+                <button type="submit" class="botao botao-secundario">Devolver jogo</button>
+            </form>
+        {% elif jogo.disponivel %}
+            <span class="selo selo-disponivel">Disponivel para aluguel</span>
+            {% if usuario_logado %}
+                <form method="post" action="{{ url_for('loja_alugar', jogo_id=jogo.id) }}">
+                    <button type="submit" class="botao">Alugar na {{ jogo.plataforma }}</button>
+                </form>
+            {% else %}
+                <p><a href="{{ url_for('login') }}">Entre na sua conta</a> para alugar este jogo.</p>
+            {% endif %}
+        {% else %}
+            <span class="selo selo-alugado">Esse jogo ja esta alugado</span>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

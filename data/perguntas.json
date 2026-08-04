@@ -1,0 +1,98 @@
+{
+  "1": [
+    {"pergunta": "Quanto e 7 + 8?", "opcoes": ["14", "15", "16", "13"], "resposta_correta": 1},
+    {"pergunta": "Quanto e 9 x 3?", "opcoes": ["27", "26", "28", "24"], "resposta_correta": 0},
+    {"pergunta": "Quanto e 20 - 12?", "opcoes": ["8", "9", "7", "10"], "resposta_correta": 0},
+    {"pergunta": "Quanto e 100 dividido por 4?", "opcoes": ["20", "25", "30", "15"], "resposta_correta": 1}
+  ],
+  "2": [
+    {"pergunta": "Qual das palavras e um substantivo?", "opcoes": ["Correr", "Bonito", "Cadeira", "Rapidamente"], "resposta_correta": 2},
+    {"pergunta": "Complete: Os alunos ___ estudando.", "opcoes": ["esta", "estao", "estar", "estive"], "resposta_correta": 1},
+    {"pergunta": "Qual frase esta no plural?", "opcoes": ["O gato dorme", "Os gatos dormem", "A gata dorme", "Eu durmo"], "resposta_correta": 1},
+    {"pergunta": "Qual e o sinonimo de feliz?", "opcoes": ["Triste", "Contente", "Cansado", "Bravo"], "resposta_correta": 1}
+  ],
+  "3": [
+    {"pergunta": "Em programacao, o que e um loop?", "opcoes": ["Um erro no codigo", "Uma repeticao de instrucoes", "Um tipo de variavel", "Um comentario"], "resposta_correta": 1},
+    {"pergunta": "O que faz um if no codigo?", "opcoes": ["Repete um bloco", "Guarda um valor", "Testa uma condicao", "Apaga uma variavel"], "resposta_correta": 2},
+    {"pergunta": "Qual desses e um valor booleano?", "opcoes": ["10", "Ola", "Verdadeiro", "3.14"], "resposta_correta": 2},
+    {"pergunta": "Para guardar o numero 10 em uma variavel chamada idade, usamos:", "opcoes": ["idade = 10", "idade == 10", "10 = idade", "idade -> 10"], "resposta_correta": 0}
+  ],
+  "4": [
+    {"pergunta": "Em que continente ficava o Imperio Romano?", "opcoes": ["America", "Europa", "Oceania", "Asia"], "resposta_correta": 1},
+    {"pergunta": "Quem foi Dom Pedro I?", "opcoes": ["Um explorador portugues", "Primeiro imperador do Brasil", "Rei da Franca", "Presidente dos EUA"], "resposta_correta": 1},
+    {"pergunta": "A Revolucao Industrial comecou em qual pais?", "opcoes": ["Franca", "Inglaterra", "Brasil", "Japao"], "resposta_correta": 1},
+    {"pergunta": "O que marcou o fim da Segunda Guerra Mundial?", "opcoes": ["A independencia do Brasil", "A queda do Muro de Berlim", "A rendicao da Alemanha e do Japao", "A Revolucao Francesa"], "resposta_correta": 2}
+  ],
+  "5": [
+    {"pergunta": "Qual e o estado da agua quando congela?", "opcoes": ["Liquido", "Gasoso", "Solido", "Plasma"], "resposta_correta": 2},
+    {"pergunta": "Qual orgao bombeia o sangue no corpo?", "opcoes": ["Pulmao", "Coracao", "Figado", "Rim"], "resposta_correta": 1},
+    {"pergunta": "O que as plantas usam a luz do sol para fazer?", "opcoes": ["Respirar", "Fotossintese", "Dormir", "Se mover"], "resposta_correta": 1},
+    {"pergunta": "Qual gas os humanos precisam respirar para viver?", "opcoes": ["Gas carbonico", "Nitrogenio", "Oxigenio", "Hidrogenio"], "resposta_correta": 2}
+  ],
+  "6": [
+    {"pergunta": "Qual e a capital do Brasil?", "opcoes": ["Rio de Janeiro", "Sao Paulo", "Brasilia", "Salvador"], "resposta_correta": 2},
+    {"pergunta": "Em qual continente fica o Egito?", "opcoes": ["America", "Africa", "Europa", "Oceania"], "resposta_correta": 1},
+    {"pergunta": "Qual e o maior oceano do mundo?", "opcoes": ["Atlantico", "Indico", "Pacifico", "Artico"], "resposta_correta": 2},
+    {"pergunta": "Qual pais tem a Torre Eiffel?", "opcoes": ["Italia", "Espanha", "Franca", "Alemanha"], "resposta_correta": 2}
+  ],
+  "7": [
+    {"pergunta": "Quantos lados tem um triangulo?", "opcoes": ["2", "3", "4", "5"], "resposta_correta": 1},
+    {"pergunta": "Qual e a formula da area de um retangulo?", "opcoes": ["base + altura", "base x altura", "base / altura", "base - altura"], "resposta_correta": 1},
+    {"pergunta": "Um quadrado tem quantos angulos retos?", "opcoes": ["1", "2", "3", "4"], "resposta_correta": 3},
+    {"pergunta": "Como se chama uma figura de 5 lados?", "opcoes": ["Hexagono", "Pentagono", "Octogono", "Quadrilatero"], "resposta_correta": 1}
+  ],
+  "8": [
+    {"pergunta": "Qual e o plural de cidadao?", "opcoes": ["Cidadaos", "Cidadoes", "Cidadaes", "Cidadaos ou cidadans"], "resposta_correta": 0},
+    {"pergunta": "Qual dessas palavras e uma conjuncao?", "opcoes": ["Rapido", "Mas", "Casa", "Bonito"], "resposta_correta": 1},
+    {"pergunta": "Na frase Ela correu rapidamente, a palavra rapidamente e um:", "opcoes": ["Substantivo", "Verbo", "Adverbio", "Pronome"], "resposta_correta": 2},
+    {"pergunta": "Qual e o antonimo de grande?", "opcoes": ["Enorme", "Pequeno", "Alto", "Largo"], "resposta_correta": 1}
+  ],
+  "9": [
+    {"pergunta": "O que e um algoritmo?", "opcoes": ["Um erro de sistema", "Uma sequencia de passos para resolver um problema", "Um tipo de computador", "Uma linguagem de programacao"], "resposta_correta": 1},
+    {"pergunta": "Qual estrutura repete um bloco de codigo varias vezes?", "opcoes": ["if", "for", "print", "return"], "resposta_correta": 1},
+    {"pergunta": "O que significa a complexidade O(n) em algoritmos?", "opcoes": ["O algoritmo nunca termina", "O tempo cresce proporcional ao tamanho da entrada", "O algoritmo so funciona com numeros", "O codigo tem n erros"], "resposta_correta": 1},
+    {"pergunta": "Uma variavel do tipo booleano pode ter quais valores?", "opcoes": ["0 e 1 apenas em texto", "Verdadeiro ou falso", "Qualquer numero", "Somente letras"], "resposta_correta": 1}
+  ],
+  "10": [
+    {"pergunta": "Qual imperio construiu o Coliseu?", "opcoes": ["Imperio Romano", "Imperio Otomano", "Imperio Bizantino", "Imperio Persa"], "resposta_correta": 0},
+    {"pergunta": "A Revolucao Francesa aconteceu em qual seculo?", "opcoes": ["Seculo XVI", "Seculo XVIII", "Seculo XX", "Seculo XIV"], "resposta_correta": 1},
+    {"pergunta": "Qual imperio dominava parte da Europa antes de cair em 1453?", "opcoes": ["Imperio Bizantino", "Imperio Britanico", "Imperio Austro-Hungaro", "Imperio Russo"], "resposta_correta": 0},
+    {"pergunta": "A Revolucao Industrial trouxe principalmente:", "opcoes": ["Fim da agricultura", "Maquinas e fabricas", "Fim das cidades", "Volta ao artesanato exclusivo"], "resposta_correta": 1}
+  ],
+  "11": [
+    {"pergunta": "Quantos ossos tem aproximadamente o corpo humano adulto?", "opcoes": ["106", "206", "306", "506"], "resposta_correta": 1},
+    {"pergunta": "Qual e a funcao dos pulmoes?", "opcoes": ["Bombear sangue", "Trocar gases na respiracao", "Digerir alimentos", "Filtrar o sangue"], "resposta_correta": 1},
+    {"pergunta": "O que e um ecossistema?", "opcoes": ["Um tipo de rocha", "Um conjunto de seres vivos e o ambiente onde vivem", "Uma doenca", "Um tipo de celula"], "resposta_correta": 1},
+    {"pergunta": "Qual celula defende o corpo contra doencas?", "opcoes": ["Celula muscular", "Celula nervosa", "Globulo branco", "Globulo vermelho"], "resposta_correta": 2}
+  ],
+  "12": [
+    {"pergunta": "O que e uma linha de fronteira?", "opcoes": ["Um rio qualquer", "O limite entre dois territorios", "Uma montanha", "Um tipo de clima"], "resposta_correta": 1},
+    {"pergunta": "Qual clima tem chuvas intensas e temperaturas altas o ano todo?", "opcoes": ["Clima polar", "Clima desertico", "Clima equatorial", "Clima temperado"], "resposta_correta": 2},
+    {"pergunta": "O que estuda a geopolitica?", "opcoes": ["Somente relevo", "Relacoes de poder entre territorios e paises", "Apenas o clima", "Somente a fauna"], "resposta_correta": 1},
+    {"pergunta": "Qual e o maior deserto do mundo em area?", "opcoes": ["Deserto do Saara", "Deserto da Antartida", "Deserto de Gobi", "Deserto do Atacama"], "resposta_correta": 1}
+  ],
+  "13": [
+    {"pergunta": "O que significa a sigla IP?", "opcoes": ["Internet Protocol", "Internet Page", "Information Process", "Internal Program"], "resposta_correta": 0},
+    {"pergunta": "Qual equipamento conecta varios dispositivos em uma rede local?", "opcoes": ["Modem", "Roteador", "Monitor", "Teclado"], "resposta_correta": 1},
+    {"pergunta": "O que e uma rede Wi-Fi?", "opcoes": ["Uma rede cabeada", "Uma rede sem fio", "Um tipo de virus", "Um programa de edicao"], "resposta_correta": 1},
+    {"pergunta": "O que significa download?", "opcoes": ["Enviar dados para a internet", "Receber dados da internet", "Apagar arquivos", "Formatar o computador"], "resposta_correta": 1}
+  ],
+  "14": [
+    {"pergunta": "O que e phishing?", "opcoes": ["Um antivirus", "Uma tentativa de enganar para roubar dados", "Um tipo de rede", "Um navegador"], "resposta_correta": 1},
+    {"pergunta": "Qual e uma boa pratica de seguranca digital?", "opcoes": ["Usar a mesma senha em tudo", "Compartilhar senha com amigos", "Usar senhas fortes e diferentes", "Nunca atualizar o sistema"], "resposta_correta": 2},
+    {"pergunta": "O que faz um firewall?", "opcoes": ["Aumenta a velocidade da internet", "Filtra e controla o trafego de rede", "Cria backups automaticos", "Edita fotos"], "resposta_correta": 1},
+    {"pergunta": "O que e um malware?", "opcoes": ["Um programa util", "Um software malicioso", "Um tipo de hardware", "Um cabo de rede"], "resposta_correta": 1}
+  ],
+  "15": [
+    {"pergunta": "O que estuda a engenharia estrutural?", "opcoes": ["Programas de computador", "A resistencia e estabilidade de construcoes", "Apenas cores de tinta", "Somente jardinagem"], "resposta_correta": 1},
+    {"pergunta": "O que e carga maxima em uma estrutura?", "opcoes": ["O peso minimo que ela suporta", "O maior peso que ela suporta com seguranca", "A cor da estrutura", "O tempo de construcao"], "resposta_correta": 1},
+    {"pergunta": "Qual material e muito usado por sua resistencia em construcoes?", "opcoes": ["Isopor", "Concreto armado", "Papel", "Algodao"], "resposta_correta": 1},
+    {"pergunta": "O que pode acontecer se uma estrutura ultrapassar sua carga maxima?", "opcoes": ["Nada muda", "Ela fica mais bonita", "Ela pode ceder ou desabar", "Ela fica mais leve"], "resposta_correta": 2}
+  ],
+  "16": [
+    {"pergunta": "O que e um circuito eletrico?", "opcoes": ["Um cano de agua", "Um caminho fechado por onde a corrente eletrica passa", "Um tipo de ima", "Um programa de computador"], "resposta_correta": 1},
+    {"pergunta": "O que mede a unidade Volt?", "opcoes": ["Corrente eletrica", "Resistencia", "Tensao eletrica", "Potencia mecanica"], "resposta_correta": 2},
+    {"pergunta": "O que e um resistor?", "opcoes": ["Um componente que gera energia", "Um componente que limita a corrente eletrica", "Um tipo de cabo de rede", "Um sensor de imagem"], "resposta_correta": 1},
+    {"pergunta": "O que acontece em um curto-circuito?", "opcoes": ["A corrente diminui", "A corrente aumenta de forma perigosa", "A energia some", "O circuito fica mais seguro"], "resposta_correta": 1}
+  ]
+}

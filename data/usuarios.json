@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "nome": "jv",
+    "email": "joaosuemia@gmail.com",
+    "senha_hash": "scrypt:32768:8:1$rij9gN6IWxgjU8oK$61acceae3785d2de3cf61df49bfe2aa3fab91292a84b77059763ed108fcf39e06f2405f34a634808a64f59ad9e217ae2b52c4084f7f70e28e17b3866d3140a6d",
+    "data_cadastro": "04/08/2026"
+  }
+]
